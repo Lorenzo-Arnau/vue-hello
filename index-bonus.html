@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vuejs</title>
+    <link rel="stylesheet" href="css/style-bonus.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+  <div id="root" >
+  <div :class="boxClass" :style="'top:'+ up +'px;left:'+ left +'px;'" > <img src="img/bastet.png" alt=""> </div>
+  <div class="commands">
+    <button class="updown" @click="moveUp">up</button>
+    <br>
+    <button class="lateral" @click="moveLeft">left</button>
+    <button class="lateral" @click="moveRight">right</button>
+    <br>
+    <button class="updown" @click="moveDown">down</button>
+    <br>
+    <input @keyup.38="moveUp" @keyup.37="moveLeft" @keyup.39="moveRight" @keyup.40="moveDown" value="Click qui per tastiera">
+  </div>
+  <div class="traguardo"></div>
+  <button class="wincheck" @click="winCheck">Schiaccia qui quando hai finito</button>
+  </div>
+  <p>Rules: usa le frecce o i click sui pulsanti per muovere il gatto <br> fino alla cuccia,quando è dentro schiaccia il pulsante di conferma  <br>per vedere se hai vinto</p>
+  <script src="js/script-bonus.js" charset="utf-8"></script>
+  </body>
+</html>

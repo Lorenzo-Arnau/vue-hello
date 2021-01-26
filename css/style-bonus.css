@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-weight: bold;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+.commands{
+    position: absolute;
+    top: 700px;
+    left: 150px;
+    background-color: cadetblue;
+}
+.lateral{
+  height: 20px;
+  width: 40%;
+  margin-left: 10px;
+}
+.updown{
+    height: 20px;
+    width: 100%;
+  }
+.traguardo{
+  height: 100px;
+  width: 100px;
+  background-image: url('../img/sofa.png');
+  background-position: center;
+  background-size: cover;
+}
+#root{
+  width: 615px;
+  height: 600px;
+  background-image: url('../img/parquet.jpg');
+}
+.wincheck{
+  position: absolute;
+  top: 800px;
+  left: 100px;
+}
+.box img{
+  height: 100px;
+}
