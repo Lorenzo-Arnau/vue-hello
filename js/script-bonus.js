@@ -6,18 +6,23 @@ var app = new Vue({
    left : 500,
    right : 0,
    down : 0,
+   score: 1000,
  },
  methods:{
     moveUp : function(){
+      this.score--
       return this.up--
     },
     moveLeft : function(){
+      this.score--
       return this.left--
     },
     moveRight : function(){
+      this.score--
       return this.left++
     },
     moveDown : function(){
+      this.score--
       return this.up++
     },
     winCheck :function(){
