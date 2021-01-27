@@ -6,7 +6,7 @@ var app = new Vue({
    left : 500,
    right : 0,
    down : 0,
-   score: 1000,
+   score: 1750,
  },
  methods:{
     moveUp : function(){
@@ -27,7 +27,7 @@ var app = new Vue({
     },
     winCheck :function(){
       if (this.up === 0 && this.left === 0) {
-        alert('hai vinto!')
+        alert('hai vinto! punteggio:'+this.score)
       }else {
         alert('manca poco riprova!')
       }
